@@ -68,6 +68,11 @@ namespace BY3_CW_Tool
             Aim.BackColor = Color.FromArgb(50, 50, 50);
             Visual.BackColor = Color.FromArgb(17, 25, 30);
             Misc.BackColor = Color.FromArgb(17, 25, 30);
+            this.pnlFormLoader.Controls.Clear();
+            frmAim frmAim_Vrb = new frmAim() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAim_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmAim_Vrb);
+            frmAim_Vrb.Show();
         }
 
         private void Misc_Click(object sender, EventArgs e)
